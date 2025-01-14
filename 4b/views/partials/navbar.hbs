@@ -1,0 +1,25 @@
+<nav>
+  <div class="navbar-left">
+    <a href="#">
+      <img
+        class="web-logo"
+        src="https://dumbways.id/assets/images/brandred.png"
+        alt="web logo"
+      />
+    </a>
+
+  </div>
+
+  <div class="navbar-right">
+    {{#if user}}
+      <h1 class="grettings">Hello, {{user.username}}</h1>
+      <a href="/logout" class="contact-link">Logout</a>
+    {{else}}
+      <a href="/register" class="contact-link">Register</a>
+      <a href="/login" class="contact-link">Login</a>
+    {{/if}}
+    {{! <a href="/contactme" class="contact-link">Contact Me</a> }}
+
+  </div>
+
+</nav>

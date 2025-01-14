@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+</head>
+
+<body>
+    {{#> layout title="Home" user=user}}
+
+    <h1 class="heroTitle">Hero List</h1>
+
+    <div class="btn-group">
+        <a href="/hero-add" class="addBtn">Add Hero</a>
+        <a href="/type-list" class="addBtn">Add List</a>
+    </div>
+
+    <main>
+      {{#each heros}}
+        <div class="card-container">
+            <div class="picture-container">
+                <img class="picture" src="{{this.photo}}" alt="">
+            </div>
+            <h1 class="titleHero">{{this.name}}</h1>
+            <h1 class="typeHero">{{this.type.nametype}}</h1>
+            {{!-- {{else}}
+            <h1 class="typeHero"></h1> --}}
+
+
+            <div class="link-detail">
+                <a class="link-detail-go" href="/hero-detail/{{this.id}}">Details</a>
+            </div>
+
+        {{#if (equal ../user.id this.user_id)}}
+            <div class="link-detail">
+                <a class="link-detail-go1" href="/hero-edit/{{this.id}}">Edit</a>
+            </div>
+
+            <div class="button-del">
+                <form action="/hero-delete/{{this.id}}" method="post">
+                    <button class="button-sub-del delete-btn">Delete</button>
+                </form>
+            </div>
+        {{/if}}
+
+        </div>
+      {{/each}}
+
+    </main>
+
+    {{/layout}}
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+<script src="/assets/js/sweetalert.js"></script>
+
+</html>

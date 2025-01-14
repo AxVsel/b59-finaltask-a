@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  font-family: Helvetica;
+}
+body {
+  background-color: #dcdde1;
+}
+
+.heroTitle {
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 63px;
+  margin: 20px;
+  color: #2f3640;
+  text-align: center;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-group > .addBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  height: 50px;
+  width: 10%;
+  background-color: #e84118;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border: none;
+}
+
+.btn-group > .addBtn:hover {
+  background-color: #2f3640;
+}
+
+main {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main > .card-container {
+  margin: 30px;
+  /* height: 450px; */
+  width: 320px;
+  background-color: #2f3640;
+  padding: 30px 10px;
+}
+
+main > .card-container > .picture-container {
+  height: 275px;
+  width: 100%;
+  background-color: #00ff4c;
+}
+
+main > .card-container > .picture-container > .picture {
+  height: 275px;
+  width: 100%;
+}
+
+main > .card-container > .titleHero {
+  text-align: center;
+  color: #f5f6fa;
+  font-size: 1vw;
+  padding: 10px 0;
+  /* background-color: #374ba7; */
+}
+
+main > .card-container > .typeHero {
+  text-align: center;
+  color: #f5f6fa;
+  font-size: 0.8vw;
+  padding: 10px 0;
+  /* background-color: #d62929; */
+}
+
+main > .card-container > .link-detail {
+  height: 42px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  /* background-color: #f5f6fa; */
+}
+
+main > .card-container > .link-detail > .link-detail-go {
+  background-color: #e84118;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 1vw;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border: 1px solid #2f3640;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+main > .card-container > .link-detail > .link-detail-go:hover {
+  background-color: #2f3640;
+  color: #f5f6fa;
+}
+
+main > .card-container > .link-detail > .link-detail-go1 {
+  background-color: #00a8ff;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 1vw;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border: 1px solid #2f3640;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+main > .card-container > .link-detail > .link-detail-go1:hover {
+  background-color: #2f3640;
+  color: #f5f6fa;
+}
+
+/* main > .card-container > .button-del {
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  background-color: #f5f6fa;
+} */
+
+main > .card-container > .button-del > form > .button-sub-del {
+  height: 38px;
+  width: 100%;
+  background-color: #fbc531;
+  cursor: pointer;
+  font-size: 1vw;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid #2f3640;
+}
+main > .card-container > .button-del > form > .button-sub-del:hover {
+  background-color: #2f3640;
+  color: #f5f6fa;
+}

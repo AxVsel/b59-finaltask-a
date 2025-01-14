@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Type</title>
+  <link rel="stylesheet" href="/assets/css/hero-type.css" />
+</head>
+
+<body>
+  {{#> layout title="Add Type" user=user}}
+  <h1 class="heroTitle">Add New Type</h1>
+  <main>
+    <form action="/type" method="post">
+      <div class="container-hero">
+        <div class="form-input">
+          <label for="nametype">Name Type</label><br />
+          <input type="text" name="nametype" id="nametype" />
+          <hr />
+        </div>
+
+        <div class="form-input">
+          <label for="description">Description</label><br />
+          <textarea name="description" id="description" id="" rows="6"></textarea>
+          <hr />
+        </div>
+
+        <div class="button-login">
+          <button type="submit" class="button-login-submit">Add New Type</button>
+        </div>
+
+      </div>
+    </form>
+  </main>
+  {{/layout}}
+</body>
+
+</html>

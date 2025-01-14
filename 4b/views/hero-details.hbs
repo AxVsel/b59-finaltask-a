@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Details</title>
+  <link rel="stylesheet" href="/assets/css/hero-details.css" />
+</head>
+
+<body>
+  {{#> layout title="Hero Details" user=user}}
+  <h1 class="heroTitle">Hero Details</h1>
+
+  <main class="hero-details">
+
+    <div class="container-details">
+      <h1 class="name-details">{{data.name}}</h1>
+      <p class="name-author">Author | {{data.user.username}}</p>
+      <div class="image-details"><img src="{{data.photo}}" alt=""></div>
+      <div class="create-details">
+        <div class="create1">Created | {{getRelativeTime data.createdAt}}</div>
+        <div class="create2">Last Edit | {{getRelativeTime data.updatedAt}}</div>
+      </div>
+      <h1 class="type-details">{{data.type.nametype}}</h1>
+      <p class="description-details">
+        {{data.type.description}}
+      </p>
+    </div>
+
+  </main>
+  {{/layout}}
+</body>
+
+</html>

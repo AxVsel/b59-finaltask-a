@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Hero</title>
+  <link rel="stylesheet" href="/assets/css/hero-type.css" />
+</head>
+
+<body>
+  {{#> layout title="Edit Hero" user=user}}
+  <h1 class="heroTitle">Edit Hero</h1>
+  <main>
+    <form action="/hero-update/{{data.id}}" method="post" enctype="multipart/form-data" id="contactForm" >
+      <div class="container-hero">
+        <div class="form-input">
+          <label for="name">Name</label><br />
+          <input type="text" name="name" id="name" value="{{data.name}}"/>
+          <hr />
+        </div>
+
+        <div class="form-input">
+          <label for="type">Type</label><br />
+      
+          <select id="type_id" name="type_id">
+            {{#each types}}
+            <option value="{{this.id}}">{{this.nametype}}</option>
+            {{/each}}
+          </select>
+ 
+          <hr />
+        </div>
+
+        <div class="form-input">
+          <label for="name">Image</label><br />
+          <input type="file" name="photo" id="photo" value="{{data.photo}}" />
+          <hr />
+        </div>
+
+        <div class="button-login">
+          <button type="submit" class="button-login-submit">Edit</button>
+        </div>
+
+      </div>
+    </form>
+  </main>
+  {{/layout}}
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Load external JavaScript -->
+  <script src="/assets/js/test.js"></script>
+</html>

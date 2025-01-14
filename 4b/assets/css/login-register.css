@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  font-family: Helvetica;
+}
+body {
+  background-color: #dfe6e9;
+}
+
+.picture > form {
+  background: url("/assets/img/wp13649445-anime-all-together-wallpapers.png");
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.picture > form > .login-container {
+  /* height: 60vh; */
+  width: 45vh;
+  /* background-color: #2f3640; */
+  background: linear-gradient(
+    to bottom,
+    rgba(47, 54, 64, 1) 20%,
+    rgba(47, 54, 64, 0.7) 100%
+  );
+  padding: 30px;
+  border-radius: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture > form > .login-container > .h1-login {
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 43px;
+  margin: 20px;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > .login-picture {
+  height: 100px;
+  /* background-color: #dfe6e9; */
+  width: 100px;
+  /* margin: 0 auto; */
+}
+
+.picture > form > .login-container > .login-picture > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.picture > form > .login-container > .form-input {
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 23px;
+  width: 100%;
+  margin: 10px 0;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > .form-input > input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 8px 0 5px 0;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > .form-input > hr {
+  background-color: #f5f6fa;
+}
+
+.picture > form > .login-container > .log {
+  width: 100%;
+  height: 60px;
+  background-color: #44bd32;
+  display: flex;
+  align-items: center;
+}
+
+.picture > form > .login-container > .log > p {
+  margin: 0 auto;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > .log-error {
+  width: 100%;
+  height: 60px;
+  background-color: #e84118;
+  display: flex;
+  align-items: center;
+}
+
+.picture > form > .login-container > .log-error > p {
+  margin: 0 auto;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > .button-login {
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  /* background-color: #f5f6fa; */
+}
+
+.picture > form > .login-container > .button-login > .button-login-submit {
+  height: 50px;
+  width: 100%;
+  background-color: #e84118;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border: none;
+  border-radius: 0px 20px 0px 20px;
+}
+
+.picture
+  > form
+  > .login-container
+  > .button-login
+  > .button-login-submit:hover {
+  background-color: #2f3640;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > h1 {
+  font-weight: 200;
+  margin-top: 10px;
+  color: #f5f6fa;
+}
+
+.picture > form > .login-container > .button-register {
+  margin-top: 10px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  /* background-color: #f5f6fa; */
+}
+
+.picture > form > .login-container > .button-register > .button-login-register {
+  /* background-color: #e84118; */
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border: 1px solid #f5f6fa;
+  border-radius: 0px 20px 0px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.picture
+  > form
+  > .login-container
+  > .button-register
+  > .button-login-register:hover {
+  background-color: #e84118;
+  color: #f5f6fa;
+}

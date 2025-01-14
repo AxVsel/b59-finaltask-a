@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/assets/css/login-register.css" />
+</head>
+
+<body>
+  {{#> layout title="Login"}}
+  <div class="picture">
+    <form action="/login" method="post">
+      <div class="login-container">
+        <div class="login-picture">
+          <img src="/assets/img/360_F_558800528_YiOMfvzxgzRmb7fWXkjr27vsHKfAzVyC.jpg" alt="" />
+        </div>
+        <h1 class="h1-login">Login</h1>
+        <div class="form-input">
+          <label for="email">Email</label><br />
+          <input type="email" name="email" id="email" />
+          <hr />
+        </div>
+        <div class="form-input">
+          <label for="password">Password</label><br />
+          <input type="password" name="password" id="password" />
+          <hr />
+        </div>
+        {{#if messages.error}}
+        <div class="log-error">
+          <p> {{messages.error}}
+          </p>
+        </div>
+        {{/if}}
+
+        {{#if messages.success}}
+        <div class="log">
+          <p> {{messages.success}}
+          </p>
+        </div>
+        {{/if}}
+
+        <div class="button-login">
+          <button type="submit" class="button-login-submit">Login</button>
+        </div>
+        <h1>OR</h1>
+        <div class="button-register">
+          <a class="button-login-register" href="/register">Register</a>
+        </div>
+
+      </div>
+    </form>
+  </div>
+  {{/layout}}
+</body>
+
+</html>

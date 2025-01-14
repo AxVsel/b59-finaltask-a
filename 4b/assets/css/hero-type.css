@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  font-family: Helvetica;
+}
+body {
+  background-color: #dfe6e9;
+}
+
+.heroTitle {
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 63px;
+  margin: 20px;
+  color: #2f3640;
+  text-align: center;
+}
+
+main {
+  height: 600px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #6cc551; */
+}
+
+main > form > .container-hero {
+  /* height: 600px; */
+  width: 450px;
+  background-color: #2f3640;
+  border-radius: 0px 50px 0px 50px;
+  padding: 30px;
+}
+
+main > form > .container-hero > .form-input {
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 23px;
+  width: 100%;
+  margin: 30px 0;
+  color: #f5f6fa;
+}
+
+main > form > .container-hero > .form-input > input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 8px 0 5px 0;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+main > form > .container-hero > .form-input > select {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 8px 0 5px 0;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+main > form > .container-hero > .form-input > select > option {
+  background-color: #2f3640;
+}
+
+main > form > .container-hero > .form-input > textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 8px 0 5px 0;
+  font-size: 20px;
+  color: #f5f6fa;
+}
+
+main > form > .container-hero > .form-input > hr {
+  background-color: #f5f6fa;
+}
+
+main > form > .container-hero > .button-login {
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  /* background-color: #f5f6fa; */
+}
+
+main > form > .container-hero > .button-login > .button-login-submit {
+  height: 50px;
+  width: 100%;
+  background-color: #e84118;
+  border: 1px solid #f5f6fa;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 300;
+  color: #f5f6fa;
+  border-radius: 0px 20px 0px 20px;
+}
+
+main > form > .container-hero > .button-login > .button-login-submit:hover {
+  background-color: #2f3640;
+  color: #f5f6fa;
+}
+
+.hero-details {
+  /* width: 100%; */
+  /* height: 600px; */
+  /* background-color: #6cc551; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 40px;
+}
+
+.hero-details > .container-details {
+  width: 40%;
+  /* height: 700px; */
+  background-color: #2f3640;
+}
+
+.hero-details > .container-details > .name-details {
+  color: #f5f6fa;
+  text-align: center;
+  font-size: 45px;
+}
+
+.hero-details > .container-details > .name-author {
+  color: #f5f6fa;
+  text-align: center;
+  font-size: 25px;
+}
+
+.hero-details > .container-details > .image-details {
+  width: 300px;
+  height: 300px;
+  background-color: #b9fc00;
+  margin: 20px auto;
+}
+
+.hero-details > .container-details > .image-details > img {
+  width: 300px;
+  height: 300px;
+}
+
+.hero-details > .container-details > .create-details {
+  width: 100%;
+  height: 50px;
+  background-color: #b9fc00;
+  display: flex;
+}
+.hero-details > .container-details > .create-details > .create1 {
+  width: 50%;
+  height: 50px;
+  background-color: #0400fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f6fa;
+  text-align: center;
+  font-size: 20px;
+}
+
+.hero-details > .container-details > .create-details > .create2 {
+  width: 50%;
+  height: 50px;
+  background-color: #fc0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f6fa;
+  text-align: center;
+  font-size: 20px;
+}
+
+.hero-details > .container-details > .type-details {
+  color: #f5f6fa;
+  text-align: center;
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+.hero-details > .container-details > .description-details {
+  color: #f5f6fa;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px auto;
+}

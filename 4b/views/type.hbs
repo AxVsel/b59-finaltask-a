@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Type List</title>
+  <link rel="stylesheet" href="/assets/css/type.css" />
+</head>
+
+<body>
+  {{#> layout title="Type List" user=user}}
+
+  <h1 class="heroTitle">Type List</h1>
+  
+
+  <div class="btn-group">
+    <a href="/" class="addBtn">Back</a>
+    <a href="/type-add" class="addBtn">Add type</a>
+  </div>
+
+  <main>
+    {{#each types}}
+    <main>
+      <div class="tycontainer">
+
+        <div class="tytitle"><a class="tydetails" href="">{{this.nametype}}</a></div>
+        <div class="tyinfo">
+          <p class="tyinfo2">{{truncateText this.description}}</p>
+        </div>
+        {{#if (equal ../user.id this.user_id)}}
+        <div class="link-detail">
+          <a class="link-detail-go1" href="/type-edit/{{this.id}}">Edit</a>
+        </div>
+
+        <div class="button-del">
+          <form action="/type-delete/{{this.id}}" method="post">
+            <button  class="button-sub-del delete-btn">Delete</button>
+          </form>
+        </div>
+        {{/if}}
+
+      </div>
+    </main>
+    {{/each}}
+
+  </main>
+
+  {{/layout}}
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+<script src="/assets/js/sweetalert.js"></script>
+</html>
