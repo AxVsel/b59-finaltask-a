@@ -18,7 +18,7 @@
     </div>
 
     <main>
-      {{#each heros}}
+        {{#each heros}}
         <div class="card-container">
             <div class="picture-container">
                 <img class="picture" src="{{this.photo}}" alt="">
@@ -33,7 +33,7 @@
                 <a class="link-detail-go" href="/hero-detail/{{this.id}}">Details</a>
             </div>
 
-        {{#if (equal ../user.id this.user_id)}}
+            {{#if (equal ../user.id this.user_id)}}
             <div class="link-detail">
                 <a class="link-detail-go1" href="/hero-edit/{{this.id}}">Edit</a>
             </div>
@@ -43,10 +43,10 @@
                     <button class="button-sub-del delete-btn">Delete</button>
                 </form>
             </div>
-        {{/if}}
+            {{/if}}
 
         </div>
-      {{/each}}
+        {{/each}}
 
     </main>
 
